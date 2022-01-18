@@ -40,7 +40,7 @@ def return_file():
     except Exception as e:
         return str(e)
 
-# @app.route('/display/<filename>')
-# def display_video(filename):
-# 	#print('display_video filename: ' + filename)
-# 	return redirect(url_for('static/video_1.mp4', code=200))
+@app.route('/display/<filename>')
+def display_video(filename):
+ 	print('display_video filename: ' + filename)
+ 	return redirect(url_for('static/video_1.mp4', code=200))
